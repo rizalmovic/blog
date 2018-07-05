@@ -1,6 +1,9 @@
 {
     "name": "rizalmovic/blog",
     "description": "Blog platform for Laravel",
+    "require": {
+        "php": "^7.1.3"
+    },
     "require-dev": {
         "phpunit/phpunit": "^7.2",
         "orchestra/testbench": "^3.6"
@@ -20,6 +23,16 @@
     "autoload-dev": {
         "psr-4": {
             "Rizalmovic\\Blog\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rizalmovic\\Blog\\BlogServiceProvider"
+            ],
+            "aliases": {
+                "Blog": "Rizalmovic\\Blog\\BlogFacade"
+            }
         }
     }
 }
