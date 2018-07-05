@@ -1,0 +1,25 @@
+{
+    "name": "rizalmovic/blog",
+    "description": "Blog platform for Laravel",
+    "require-dev": {
+        "phpunit/phpunit": "^7.2",
+        "orchestra/testbench": "^3.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rizalmovic",
+            "email": "rizalmovic@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Rizalmovic\\Blog\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rizalmovic\\Blog\\Tests\\": "tests/"
+        }
+    }
+}
